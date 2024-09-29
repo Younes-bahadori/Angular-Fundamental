@@ -1,28 +1,44 @@
-# AngularCustomComponents
+# Angular CSS Design System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+## Introduction
+This project is a scalable **CSS Design System** built for Angular applications using **CSS Variables**. It provides a set of reusable custom components like buttons, cards, , and supports theming (light/dark mode) with the ability to easily customize styles using CSS variables.
+
+## Features
+
+- **CSS Variables** for centralized control of colors, typography, spacing, and layout.
+- **Custom Components** such as buttons, cards, and  designed for reusability.
+- **Theme Support**: Easily switch between light and dark modes or define custom themes.
+- **Responsive Design**: CSS variables adapt to screen size changes.
+- **Easy to Customize**: Modify styles globally or locally with minimal effort.
+  
+## Prerequisites
+
+Before you start, make sure you have the following tools installed:
+
+- [Node.js](https://nodejs.org/) (v12 or higher)
+- [Angular CLI](https://angular.io/cli) (v11 or higher)
+  
+## Getting Started
+
+Follow the instructions below to set up and run the project locally.
+
+This project was generated with Angular CLI version 18.2.6.
 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 1. Clone the repository
 
-## Code scaffolding
+```bash
+git clone https://github.com/Younes-bahadori/Angular-Fundamental
+cd Angular-Fundamental-master
+```
+### 2. Install dependencies
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run  `npm install`
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Run the development server
+Run  `ng serve`
 
-## Running unit tests
+The application will be available at http://localhost:4200.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
