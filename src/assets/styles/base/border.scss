@@ -1,0 +1,31 @@
+:root {
+    --color-border-on-primary: #6D8399;
+    --color-border-on-surface: #FCFCFD;
+    --color-border-on-primary-morelighter: #DBE2EB;
+    --color-border-on-secondary: #DBE2EB;
+    --color-border-rest: #DBE2EB;
+    --color-border-hover: #DBE2EB;
+    --color-border-negative: #DBE2EB;
+    --color-border-disable: #DBE2EB;
+    --color-border-positive: #DBE2EB;
+    --color-border-focus: #003266;
+
+    --border-width-thin: 1px;
+    --border-width-thick: 2px;
+    --border-width-thicker: 3px;
+    --border-thin: var(--border-width-thin) solid var(--color-border-on-surface);
+    --border-thick: var(--border-width-thick) solid var(--color-border-on-surface);
+    --border-thicker: var(--border-width-thicker) solid var(--color-border-on-surface);
+    --border-disabled: var(--border-width-thin) solid var(--color-border-disable);
+    --border-light-green: var(--border-width-thin) solid var(---color-light-green);
+    --border-rest: var(--border-width-thin) solid var(--color-border-rest);
+
+    --radius-xx-sm: 0.25rem;
+    --radius-x-sm: 0.5rem;
+    --radius-sm: 0.625rem; //10px
+    --radius-m: 24px;
+    --radius-lg: 30px;
+    --radius-xxx-lg: 96px;
+    --radius-table-border: 0 0 0.25rem 0.25rem;
+    --radius-circle: 50%;
+}

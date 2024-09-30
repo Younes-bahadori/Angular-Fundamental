@@ -1,0 +1,71 @@
+@import './breakpoint';
+@import './spacing';
+
+:root {
+    --gutter: var(--spacing-medium);
+    --margin-sides: var(--spacing-medium);
+    --columns: 12;
+}
+
+.column {
+    background-color: #f0f0f0;
+    padding: var(--spacing-medium);
+    text-align: center;
+}
+
+@media (var(--xxs-viewport)) {
+    :root {
+        --columns: 2;
+        --gutter: var(--spacing-smal);
+        --margin-sides: var(--spacing-medium)
+    }
+}
+
+@media (var(--xs-viewport)) {
+    :root {
+        --columns: 6;
+        --gutter: var(--spacing-smal);
+        --margin-sides: var(--spacing-medium)
+    }
+}
+
+@media (var(--s-viewport)) {
+    :root {
+        --columns: 6;
+        --gutter: var(--spacing-smal);
+        --margin-sides: var(--spacing-medium)
+    }
+}
+
+@media (var(--m-viewport)) {
+    :root {
+        --columns: 12;
+        --gutter: var(--spacing-medium);
+        --margin-sides: var(--spacing-x-large)
+    }
+}
+
+@media (var(--l-viewport)) {
+    :root {
+        --columns: 12;
+        --gutter: var(--spacing-medium);
+        --margin-sides: var(--spacing-x-large)
+    }
+}
+
+@media (var(--xl-viewport)) {
+    :root {
+        --columns: 12;
+        --gutter: var(--spacing-medium);
+        --margin-sides: var(--spacing-x-large);
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: var(--gutter);
+    margin-left: var(--margin-sides);
+    margin-right: var(--margin-sides);
+}

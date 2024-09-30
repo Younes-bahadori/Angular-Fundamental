@@ -1,0 +1,81 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
+  --font-size-caps: 10px;
+  --font-size-body2: 11px;
+  --font-size-body1: 12px;
+  --font-size-headline5: 14px;
+  --font-size-headline3: 20px;
+  --font-size-overline-regular: 10px;
+
+  --line-height-body1-bold: 14.52px;
+  --line-height-body1: 20px;
+  --line-height-body1-regular: 14.52px;
+
+  --line-height-headline5: 17px;
+  --line-height-headline3-medium: 24px;
+  --line-height-caps: 16px;
+  --line-height-body2-regular: 13.31px;
+  --line-height-overline-regular: 12.1px;
+}
+
+@mixin text-style($font-size, $font-weight, $line-height, $font-family: var(--font-family)) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+.text-body1-bold {
+  @include text-style(var(--font-size-body1), var(--font-weight-bold), var(--line-height-body1-bold));
+}
+
+.text-body1-medium {
+  @include text-style(var(--font-size-body1), var(--font-weight-medium), var(--line-height-body1));
+}
+
+.text-body1-regular {
+  @include text-style(var(--font-size-body1), var(--font-weight-regular), var(--line-height-body1-regular));
+}
+
+.text-body2-regular {
+  @include text-style(var(--font-size-body2), var(--font-weight-regular), var(--line-height-body2-regular));
+}
+
+.text-body2-medium {
+  @include text-style(var(--font-size-body2), var(--font-weight-medium), var(--line-height-body2-regular));
+}
+
+.text-headline5-bold {
+  @include text-style(var(--font-size-headline5), var(--font-weight-bold), var(--line-height-headline5));
+}
+
+.text-headline3-medium {
+  @include text-style(var(--font-size-headline3), var(--font-weight-medium), var(--line-height-headline3-medium));
+}
+
+.text-headline5-medium {
+  @include text-style(var(--font-size-headline5), var(--font-weight-bold), var(--line-height-headline5));
+}
+
+.text-headline5-regular {
+  @include text-style(var(--font-size-headline5), var(--font-weight-regular), var(--line-height-headline5));
+}
+
+.text-caps {
+  @include text-style(var(--font-size-caps), var(--font-weight-semi-bold), var(--line-height-caps));
+}
+
+.text-overline-regular {
+  @include text-style(var(--font-size-overline-regular), var(--font-weight-regular), var(--line-height-overline-regular));
+}

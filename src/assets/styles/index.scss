@@ -1,0 +1,33 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+
+$sample-sginal-theme: mat.define-theme((color: (theme-type: light,
+        primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette,
+      ),
+      density: (scale: 0,
+      )));
+
+:root {
+  @include mat.all-component-themes($sample-sginal-theme);
+}
+
+@import "base/border.scss";
+@import "base/breakpoint.scss";
+@import "base/colors.scss";
+@import "base/grid.scss";
+@import "base/spacing.scss";
+@import "base/typography.scss";
+@import "base/z-index.scss";
+@import "base/theme.scss";
+
+@import "base/normalize.scss";
+
+
+@import "base/font.scss";
+
+@import "base/material.scss";
+
+@import "component/page-header.scss";
